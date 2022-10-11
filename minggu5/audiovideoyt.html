@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html> 
+	<head> 
+		<title>Multimedia</title>
+	</head>
+	<body style="background-color:"> 
+		<tr>
+		<td>
+		<p> 
+			<h2>Audio, Video yt, </h2>
+			<button onclick="playVid()" type="button"> Play Video</button>
+			<button onclick="pauseVid()" type="button"> Pause Video</button>			
+			<button onclick="controlsplayvid()" type="button">Control ON</button>
+			<button onclick="controlspausevid()" type="button"> Control OFF</button>
+		</p>
+		</td>
+		</tr>
+		<video id="myVideo" width="480" height="270"><br> 
+		<source src="nct dream.mp4" type="video/mp4" >
+		</video>
+		<script> 
+					var vid = document.getElementById("myVideo"); 
+
+					function playVid() { 
+					  vid.play(); 
+					} 
+
+					function pauseVid() { 
+					  vid.pause(); 
+					} 
+
+					function controlsPlayVid() { 
+					  vid.controls = true; 
+					  vid.load ();
+					} 
+
+					function controlsPauseVid() { 
+					  vid.controls = false;
+					  vid.load (); 
+					} 
+
+
+				</script>  
+
+		<iframe width="480" height="270" src="https://www.youtube.com/embed/RnO0HhILXi4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		
+		<audio controls="" width="480" height="270">
+		<source src="svt audio.mp3" type="audio/mp3">
+		</audio>
+
+		<video autoplay loop muted playsinline style="width: 400px; height: 200px;">
+        	<source src="kitten.mp4" type="video/mp4">
+        </video>
+	</body>
+
+	
+</html>
